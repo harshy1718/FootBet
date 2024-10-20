@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %} Prediction {% endblock title %}
+{% block body%}
+<table class="container my-4">
+    <h3 style="padding-left: 100px; padding-top: 10px;">Your Predictions</h3>
+    <thead>
+      <tr>
+        <th scope="col">S.No.</th>
+        <th scope="col">Prediction Name</th>
+        <th scope="col">Predicted Result</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Total</td>
+        <td>{{total}}</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Both Teams To Score</td>
+        <td>{{btts}}</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>{{team1}} Total</td>
+        <td>{{t1total}}</td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>{{team2}} Total</td>
+        <td>{{t2total}}</td>
+      </tr>
+    </tbody>
+</table>
+{% endblock body%}
